@@ -1,0 +1,363 @@
+/*IMPORTANT*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "poppins";
+    --primary: rgb(211, 13, 13);
+    --primaryShade: white;
+    --secondaryShade: rgb(245, 242, 248);
+    --tertiaryShade: rgb(47, 48, 66);
+    --quaternaryShade: rgb(51, 52, 71);
+}
+
+
+/*NAVBAR*/
+
+.navParent {
+    position: fixed;
+    width: 90%;
+    padding: 0 5%;
+    background: var(--primaryShade);
+    height: 55px;
+    line-height: 55px;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.navParent:hover {
+    box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
+}
+
+.navParentNotTop {
+    box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
+}
+
+.navChild {}
+
+.navTopper {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.navTopper:hover {
+    opacity: 0.7;
+}
+
+.navIcon {
+    width: 45px;
+    height: 45px;
+    padding: 5px 0;
+}
+
+.navHeader {
+    margin: 0;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+
+/*CONTENT*/
+
+.content {
+    min-height: 100vh;
+}
+
+.containerPrimary {
+    background: var(--primaryShade);
+    padding: 40px 5%;
+}
+
+.containerSecondary {
+    background: var(--secondaryShade);
+    padding: 40px 5%;
+}
+
+.containerTertiary {
+    background: var(--tertiaryShade);
+    padding: 40px 5%;
+    color: white;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    margin: 15px auto;
+    display: block;
+    width: fit-content;
+    background: var(--primary);
+    padding: 8px 20px;
+    font-weight: 300;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 4px 10px 0;
+    transition: all 0.3s;
+    user-select: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.button:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 4px 10px 0, rgba(0, 0, 0, 0.15) 0 12px 16px 0, inset rgba(0, 0, 0, 0.12) 0 0 0 10000px;
+}
+
+.button:focus {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 4px 10px 0, rgba(0, 0, 0, 0.15) 0 18px 26px 0, inset rgba(0, 0, 0, 0.2) 0 0 0 10000px;
+}
+
+.button span {
+    font-size: 25px;
+    padding-right: 8px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    padding: 0 5%;
+    align-items: flex-start;
+}
+
+.cardParent {
+    padding: 1.5rem;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 30px 0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardHeader {
+    font-size: 28px;
+    margin: 13px 0;
+}
+
+.cardText {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.cardImage {
+    width: 150px;
+    height: 150px;
+    margin: 13px auto;
+}
+
+.displayParent {
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayChild {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayHeader {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.displayText {
+    font-size: 16px;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.displayImage {
+    width: 60%;
+    user-select: none;
+}
+
+.boxParent {
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 30px 0;
+}
+
+.boxChild {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxHeader {
+    font-size: 2.2rem;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.boxText {
+    font-size: 15px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+
+/*HERO*/
+
+.heroParent {
+    min-height: 100vh;
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroChild {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroHeader {
+    font-size: 2.75rem;
+    margin: 0;
+    text-align: center;
+}
+
+.heroText {
+    font-size: 17px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.landingButton {
+    padding: 10px 30px;
+    font-size: 19px;
+}
+
+.heroImage {
+    width: 70%;
+    user-select: none;
+}
+
+
+/**/
+
+.tertiaryCardContainer .cardParent {
+    background: var(--quaternaryShade);
+}
+
+.secondaryBoxParent {
+    background: var(--primaryShade);
+}
+
+
+/*FOOTER*/
+
+.footer {
+    --footerPrimary: #2B92F1;
+    --footerTertiary: rgb(40, 40, 53);
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 20px 5%;
+    font-family: "poppins", sans-serif;
+    background: var(--footerTertiary);
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.footerLeft {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    flex-direction: column;
+}
+
+.footerTopper {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+}
+
+.footerIcon {
+    margin: 0 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 30px 0;
+}
+
+.footerHeader {
+    margin: 0;
+    font-size: 27px;
+}
+
+.footerCopyright {
+    text-align: center;
+}
+
+.footerContentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    justify-content: center;
+}
+
+.footerContentChild {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContentHeader {
+    font-size: 21px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footerContent {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--footerPrimary);
+    font-weight: 600;
+    transition: all 0.3s;
+    padding: 4px 0;
+    width: fit-content;
+}
+
+.footerContent:hover {
+    box-shadow: var(--footerPrimary) 0 2px 0 0;
+}
+
+.footerContent:focus {
+    box-shadow: var(--footerPrimary) 0 2px 0 0;
+    opacity: 0.8;
+}
+
+.footerContent:visited {
+    box-shadow: var(--footerPrimary) 0 0 0 0;
+    opacity: 0.7;
+}
