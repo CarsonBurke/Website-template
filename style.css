@@ -49,7 +49,7 @@ body {
     display: flex;
     align-items: center;
     width: fit-content;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .navLeft {}
@@ -147,7 +147,7 @@ body {
     transition: all 0.3s;
     display: flex;
     align-items: center;
-    font-size: 19px;
+    font-size: 18px;
     opacity: 0.7;
     font-weight: bold;
 }
@@ -159,6 +159,76 @@ body {
 
 .navRightLeft a span {
     padding-right: 5px;
+}
+
+.navRightRight {
+    display: flex;
+    align-items: center;
+    padding: 0 15px
+}
+
+.navRightButton {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background: var(--primary);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 8px 0;
+    transition: all 0.3s;
+}
+
+.navRightButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 6px 8px 0, inset rgba(0, 0, 0, 0.12) 0 0 0 10000px;
+}
+
+.navRightButton:focus {
+    box-shadow: rgba(0, 0, 0, 0.4) 0 8px 14px 0, inset rgba(0, 0, 0, 0.2) 0 0 0 10000px;
+}
+
+.navRightButtonAlt {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background: var(--primary);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 8px 0;
+    transition: all 0.3s;
+}
+
+.navRightButtonAlt:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 6px 8px 0, inset rgba(255, 255, 255, 0.18) 0 0 0 10000px;
+}
+
+.navRightButtonAlt:focus {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 9px 18px 0, inset rgba(255, 255, 255, 0.25) 0 0 0 10000px;
+}
+
+.navRightIcon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 55px;
+    padding: 0 5px;
+    transition: all 0.3s;
+}
+
+.navRightIcon:hover {
+    background: var(--secondaryShade);
+}
+
+.navRightIcon span {
+    font-size: 45px;
 }
 
 .navSideBar {
@@ -262,9 +332,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.12) 0 12px 22px 2px, rgba(0, 0, 0, 0.075) 0 12px 12px;
 }
 
-.navTopBar .navDropDownContentChild a {
-    font-size: 18px;
-}
+.navTopBar .navDropDownContentChild a {}
 
 .navTopBar .navDropDownContentChild a:hover {
     background: var(--secondaryShade);
