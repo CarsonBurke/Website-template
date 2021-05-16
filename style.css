@@ -148,7 +148,8 @@ body {
     display: flex;
     align-items: center;
     font-size: 19px;
-    opacity: 0.8;
+    opacity: 0.7;
+    font-weight: bold;
 }
 
 .navRightLeft a:hover {
@@ -183,6 +184,12 @@ body {
     box-shadow: rgba(0, 0, 0, 0.12) 0 0 20px 0, rgba(0, 0, 0, 0.2) 0 0 0 10000px;
 }
 
+.navSideBar h3 {
+    padding-left: 15px;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
 .navSideBar a {
     padding-left: 15px;
     height: 40px;
@@ -190,10 +197,11 @@ body {
     text-decoration: none;
     color: black;
     transition: all 0.3s;
-    font-size: 19px;
+    font-size: 18px;
     display: flex;
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.7;
+    font-weight: bold;
 }
 
 .navSideBar a:hover {
@@ -204,6 +212,123 @@ body {
 
 .navSideBar a span {
     padding-right: 5px;
+}
+
+.navTopBar .navDropDownButton {}
+
+.navTopBar .navDropDownButton:hover {
+    opacity: 1;
+}
+
+.navTopBar .navDropDownButton span {
+    transition: 0.4s;
+}
+
+.navTopBar .navDropDownParent:hover button span {
+    transform: rotate(180deg);
+}
+
+.navTopBar .navDropDownParent {
+    position: relative;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.navTopBar .navDropDownContentParent {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    right: -13px;
+    top: 20px;
+    background: transparent;
+    padding: 12px;
+    transition: all 0.3s;
+}
+
+.navTopBar .navDropDownContentChild {
+    box-shadow: rgba(0, 0, 0, 0.08) 0 12px 22px 2px, rgba(0, 0, 0, 0.055) 0 12px 12px;
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 200px;
+    width: max-content;
+    transition: all 0.3s;
+    background: var(--primaryShade);
+    display: flex;
+    flex-direction: column;
+}
+
+.navTopBar .navDropDownContentChild:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0 12px 22px 2px, rgba(0, 0, 0, 0.075) 0 12px 12px;
+}
+
+.navTopBar .navDropDownContentChild a {
+    font-size: 18px;
+}
+
+.navTopBar .navDropDownContentChild a:hover {
+    background: var(--secondaryShade);
+}
+
+.navTopBar .navDropDownParent:hover .navDropDownContentParent {
+    opacity: 1;
+    pointer-events: all;
+    top: 50px;
+}
+
+.navTopBar .navDropDownParent:hover .navDropDownButton {
+    background: var(--secondaryShade);
+}
+
+.navSideBar .navDropDownButton {}
+
+.navSideBar .navDropDownButton:hover {
+    opacity: 1;
+}
+
+.navSideBar .navDropDownButton span {
+    transition: 0.4s;
+}
+
+.navSideBar .navDropDownParent:hover button span {
+    transform: rotate(180deg);
+}
+
+.navSideBar .navDropDownParent {
+    position: relative;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.navSideBar .navDropDownContentParent {
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+    background: transparent;
+    transition: all 0.3s;
+    position: relative;
+    top: -30px;
+}
+
+.navSideBar .navDropDownContentChild {
+    display: flex;
+    flex-direction: column;
+}
+
+.navSideBar .navDropDownContentChild a:hover {
+    background: var(--primaryShade);
+}
+
+.navSideBar .navDropDownParent:hover .navDropDownContentParent {
+    opacity: 1;
+    pointer-events: all;
+    height: fit-content;
+    top: 0;
+}
+
+.navSideBar .navDropDownParent:hover .navDropDownButton {
+    background: var(--primaryShade);
 }
 
 
