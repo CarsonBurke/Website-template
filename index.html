@@ -13,27 +13,50 @@
     <script src="scroller.js"></script>
 
     <nav class="navParent">
-        <div class="navChild navLeft">
+        <div class="navTopBar">
+            <div class="navChild navLeft">
 
-            <a href="#" class="navTopper">
+                <div class="navSideBarButton animate" data-time="0.4" onclick="navSideBarToggle()">
 
-                <img src="images/carsonIcon.png" alt="" class="navIcon animate" data-time="0.4">
-                <h1 class="navHeader animate" data-time="0.6">Header</h1>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
 
-            </a>
+                </div>
 
+                <a href="#" class="navTopper">
+
+                    <img src="images/carsonIcon.png" alt="" class="navIcon animate" data-time="0.6">
+                    <h1 class="navHeader animate" data-time="0.8">Header</h1>
+
+                </a>
+
+            </div>
+            <div class="navChild navRight">
+                <div class="navRightLeft">
+
+                    <a href="#"><span class="material-icons-outlined">
+                        play_arrow
+                        </span>Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+
+                </div>
+                <div class="navRightRight">
+
+
+
+                </div>
+            </div>
         </div>
-        <div class="navChild navRight">
-            <div class="navRightLeft">
+        <div class="navSideBar">
 
+            <a href="#"><span class="material-icons-outlined">
+                play_arrow
+                </span>Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
 
-
-            </div>
-            <div class="navRightRight">
-
-
-
-            </div>
         </div>
     </nav>
 

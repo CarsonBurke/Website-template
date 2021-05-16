@@ -24,7 +24,7 @@ body {
 
 /*NAVBAR*/
 
-.navParent {
+.navTopBar {
     position: fixed;
     width: 90%;
     padding: 0 5%;
@@ -33,17 +33,79 @@ body {
     line-height: 55px;
     transition: all 0.3s;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
 }
 
-.navParent:hover {
+.navTopBar:hover {
     box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
 }
 
-.navParentNotTop {
+.navTopBarNotTop {
     box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
 }
 
-.navChild {}
+.navChild {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 50%;
+}
+
+.navLeft {}
+
+.navSideBarButton {
+    float: left;
+    height: 45px;
+    width: 45px;
+    margin: 5px 10px;
+    margin-left: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 25px;
+}
+
+.navSideBarButton:hover {
+    opacity: 0.6;
+}
+
+@media all and (max-width: 600px) {
+    .navSideBarButton {
+        display: none;
+    }
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    margin: 8.5px 7.5px;
+    transition: all 0.2s;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 3px 6px 1px;
+}
+
+.barActive1 {
+    background-color: var(--primary);
+    top: 7px;
+    transform: rotate(-30deg);
+    width: 20px;
+}
+
+.barActive2 {
+    background-color: var(--primary);
+    width: 40px;
+}
+
+.barActive3 {
+    background-color: var(--primary);
+    top: -7px;
+    transform: rotate(30deg);
+    width: 20px;
+}
 
 .navTopper {
     display: flex;
@@ -68,6 +130,80 @@ body {
     margin-left: 10px;
     color: rgb(0, 0, 0);
     font-size: 30px;
+}
+
+.navRight {}
+
+.navRightLeft {
+    display: flex;
+}
+
+.navRightLeft a {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    height: 55px;
+    padding: 0 20px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    opacity: 0.8;
+}
+
+.navRightLeft a:hover {
+    background: var(--secondaryShade);
+    opacity: 1;
+}
+
+.navRightLeft a span {
+    padding-right: 5px;
+}
+
+.navSideBar {
+    background: var(--secondaryShade);
+    width: 250px;
+    min-height: calc(100vh - 55px);
+    padding: 10px 0;
+    left: -250px;
+    top: 55px;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 0 20px 0;
+    z-index: 999;
+    overflow: visible;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.navSideBarActive {
+    left: 0;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 0 20px 0, rgba(0, 0, 0, 0.2) 0 0 0 10000px;
+}
+
+.navSideBar a {
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.navSideBar a:hover {
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 20px 0;
+    background: var(--primaryShade);
+    opacity: 1;
+}
+
+.navSideBar a span {
+    padding-right: 5px;
 }
 
 
