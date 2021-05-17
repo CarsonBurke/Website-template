@@ -351,6 +351,12 @@ body::-webkit-scrollbar-thumb:hover {
     top: 50px;
 }
 
+.navTopBar .navDropDownParent:focus-within .navDropDownContentParent {
+    opacity: 1;
+    pointer-events: all;
+    top: 50px;
+}
+
 .navTopBar .navDropDownParent:hover .navDropDownButton {
     background: var(--secondaryShade);
 }
