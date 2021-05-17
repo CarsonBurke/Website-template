@@ -33,7 +33,6 @@ function parallax() {
 
             item.dataset.speedMultiplier = "0.7"
         }
-        console.log(getPosition(item))
 
         item.style.backgroundPositionY = getPosition(item) * -1 * item.dataset.speedMultiplier + "px"
     }

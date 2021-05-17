@@ -412,6 +412,16 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
 }
 
+.image {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: auto;
+    user-select: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 6px 12px 0;
+    border-radius: 4px;
+}
+
 .button {
     text-decoration: none;
     color: white;
@@ -453,33 +463,31 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .cardParent {
-    padding: 1.5rem;
     margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 10px 30px 0;
-    width: 250px;
+    width: 290px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .cardHeader {
+    padding: 0 1rem;
     font-size: 28px;
-    margin: 13px 0;
 }
 
 .cardText {
+    padding: 0 2rem;
     font-size: 16px;
     line-height: 26px;
 }
 
 .cardImage {
-    width: 150px;
-    height: 150px;
-    margin: 13px auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    user-select: none;
+    width: 270px;
+    height: 270px;
 }
 
 .displayParent {
@@ -500,7 +508,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("images/parallaxImage2.jpg");
+    background-image: url("images/image2.jpg");
     box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 0 1000px;
     color: white;
 }
@@ -529,12 +537,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 30px auto;
 }
 
-.displayImage {
-    width: 60%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    user-select: none;
-}
+.displayImage {}
 
 .boxParent {
     width: 70%;
@@ -579,13 +582,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 20px auto;
 }
 
-.boxImage {
-    width: 60%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    user-select: none;
-    margin: 10px auto;
-}
+.boxImage {}
 
 .sliderParent {
     width: 60%;
@@ -649,11 +646,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .slideImage {
-    width: 30%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    margin: auto;
-    user-select: none;
+    width: 40%;
 }
 
 .slideHeader {
@@ -692,7 +685,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("images/parallaxImage.jpg");
+    background-image: url("images/image1.jpg");
     box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 0 1000px;
     color: white;
 }
@@ -730,9 +723,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .heroImage {
     width: 70%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    user-select: none;
+    box-shadow: none;
 }
 
 
