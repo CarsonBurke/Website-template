@@ -129,10 +129,11 @@ body::-webkit-scrollbar-thumb:hover {
     transition: all 0.3s;
     text-decoration: none;
     width: fit-content;
+    padding: 0 8px;
 }
 
 .navTopper:hover {
-    opacity: 0.7;
+    background: var(--secondaryShade);
 }
 
 .navIcon {
