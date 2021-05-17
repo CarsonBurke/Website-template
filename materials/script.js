@@ -1,10 +1,42 @@
+let navParent = document.getElementsByClassName("navParent")[0]
+
 let navTopBar = document.getElementsByClassName("navTopBar")[0]
 let navSideBar = document.getElementsByClassName("navSideBar")[0]
 let navSideBarButton = document.getElementsByClassName("navSideBarButton")[0]
 
+let navRightLeft = document.getElementsByClassName("navRightLeft")[0]
+let navRightButtons = document.getElementsByClassName("navRightButton")
+
 let bar1 = document.getElementsByClassName("bar1")[0]
 let bar2 = document.getElementsByClassName("bar2")[0]
 let bar3 = document.getElementsByClassName("bar3")[0]
+
+window.addEventListener("load", tooBig)
+window.addEventListener("resize", tooBig)
+
+function tooBig() {
+    if (window.innerWidth <= navParent.dataset.tooBig) {
+
+        navRightLeft.style.display = "none"
+        navSideBarButton.style.display = "block"
+        navSideBar.style.display = "block"
+
+        for (let button of navRightButtons) {
+
+            button.style.display = "none"
+        }
+    } else {
+
+        navRightLeft.style.display = "flex"
+        navSideBarButton.style.display = "none"
+        navSideBar.style.display = "none"
+
+        for (let button of navRightButtons) {
+
+            button.style.display = "flex"
+        }
+    }
+}
 
 window.onscroll = function navParentTop() {
 
@@ -30,6 +62,8 @@ function navSideBarToggle() {
     bar2.classList.toggle("barActive2")
 
     bar3.classList.toggle("barActive3")
+
+    document.body.classList.toggle("navBodyStopOverflow")
 }
 
 window.onclick = element => {
@@ -65,6 +99,8 @@ window.onclick = element => {
         bar2.classList.remove("barActive2")
 
         bar3.classList.remove("barActive3")
+
+        document.body.classList.remove("navBodyStopOverflow")
     }
 }
 
@@ -98,7 +134,6 @@ function slideForward() {
             slide.classList.remove("slideActive")
         }
     }
-    console.log(slidesIndex)
 }
 
 function slideBack() {
@@ -123,5 +158,4 @@ function slideBack() {
             slide.classList.remove("slideActive")
         }
     }
-    console.log(slidesIndex)
 }

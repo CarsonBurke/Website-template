@@ -12,11 +12,11 @@
 <body>
     <script src="materials/scroller.js"></script>
 
-    <nav class="navParent">
+    <nav class="navParent" data-too-big="1050">
         <div class="navTopBar">
             <div class="navChild navLeft">
 
-                <div class="navSideBarButton animate" data-time="0.4" onclick="navSideBarToggle()">
+                <div class="navSideBarButton animate" onclick="navSideBarToggle()">
 
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -26,14 +26,14 @@
 
                 <a href="#" class="navTopper">
 
-                    <img src="materials/images/carsonIcon.png" alt="" class="navIcon animate" data-time="0.6">
-                    <h1 class="navHeader animate" data-time="0.8">Header</h1>
+                    <img src="materials/images/carsonIcon.png" alt="" class="navIcon animate">
+                    <h1 class="navHeader animate">Header</h1>
 
                 </a>
 
             </div>
             <div class="navChild navRight">
-                <div class="navRightLeft animate" data-time="1">
+                <div class="navRightLeft animate">
 
                     <a href="#"><span class="material-icons-outlined">
                         home
@@ -56,11 +56,11 @@
                     </div>
 
                 </div>
-                <div class="navRightRight animate" data-time="1.2">
+                <div class="navRightRight">
 
-                    <a href="#" class="navRightButton">Login</a>
-                    <a href="#" class="navRightButtonAlt">Signup</a>
-                    <a href="#" class="navRightIcon"><span class="material-icons-outlined">
+                    <a href="#" class="navRightButton animate">Login</a>
+                    <a href="#" class="navRightButtonAlt navRightButton animate">Signup</a>
+                    <a href="#" class="navRightIcon animate"><span class="material-icons-outlined">
                         account_circle
                         </span></a>
 

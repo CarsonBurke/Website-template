@@ -38,6 +38,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*NAVBAR*/
 
+.navBodyStopOverflow {
+    overflow-y: hidden;
+}
+
 .navTopBar {
     position: fixed;
     width: 95%;
@@ -81,12 +85,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navSideBarButton:hover {
     opacity: 0.6;
-}
-
-@media all and (max-width: 600px) {
-    .navSideBarButton {
-        display: none;
-    }
 }
 
 .bar1,
@@ -194,6 +192,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.25) 0 2px 8px 0;
     transition: all 0.3s;
+    display: flex;
 }
 
 .navRightButton:hover {
@@ -204,20 +203,7 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 0 8px 14px 0, inset rgba(0, 0, 0, 0.2) 0 0 0 10000px;
 }
 
-.navRightButtonAlt {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-    background: var(--primary);
-    height: 40px;
-    line-height: 40px;
-    padding: 0 20px;
-    border-radius: 6px;
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 8px 0;
-    transition: all 0.3s;
-}
+.navRightButtonAlt {}
 
 .navRightButtonAlt:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0 6px 8px 0, inset rgba(255, 255, 255, 0.18) 0 0 0 10000px;
