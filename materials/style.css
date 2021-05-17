@@ -476,6 +476,9 @@ body::-webkit-scrollbar-thumb:hover {
     width: 150px;
     height: 150px;
     margin: 13px auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    user-select: none;
 }
 
 .displayParent {
@@ -518,6 +521,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 .displayImage {
     width: 60%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     user-select: none;
 }
 
@@ -566,6 +571,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 .boxImage {
     width: 60%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    user-select: none;
     margin: 10px auto;
 }
 
@@ -632,7 +640,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .slideImage {
     width: 30%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     margin: auto;
+    user-select: none;
 }
 
 .slideHeader {
@@ -693,13 +704,15 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 30px auto;
 }
 
-.landingButton {
+.heroButton {
     padding: 10px 30px;
     font-size: 19px;
 }
 
 .heroImage {
     width: 70%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     user-select: none;
 }
 
