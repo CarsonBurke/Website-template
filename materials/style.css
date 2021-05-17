@@ -54,12 +54,17 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: space-between;
 }
 
+.navTopBarNotTop {
+    background: var(--primaryShade);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
+}
+
 .navTopBar:hover {
     background: var(--primaryShade);
     box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
 }
 
-.navTopBarNotTop {
+.navTopBar:focus-within {
     background: var(--primaryShade);
     box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
 }
@@ -204,14 +209,22 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 0 8px 14px 0, inset rgba(0, 0, 0, 0.2) 0 0 0 10000px;
 }
 
-.navRightButtonAlt {}
+.navRightButtonAlt {
+    background: transparent;
+    color: var(--primary);
+    box-shadow: none;
+    border-radius: 0;
+    height: 55px;
+    line-height: 55px;
+}
 
 .navRightButtonAlt:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0 6px 8px 0, inset rgba(255, 255, 255, 0.18) 0 0 0 10000px;
+    box-shadow: inset rgba(0, 0, 0, 0) 0 0 0 1000px, inset var(--primary) 0 -4px 0 0;
 }
 
 .navRightButtonAlt:focus {
-    box-shadow: rgba(0, 0, 0, 0.3) 0 9px 18px 0, inset rgba(255, 255, 255, 0.25) 0 0 0 10000px;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 0 1000px, inset var(--primary) 0 -55px 0 0;
+    color: white;
 }
 
 .navRightIcon {
