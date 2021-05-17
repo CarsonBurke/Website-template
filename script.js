@@ -34,7 +34,29 @@ function navSideBarToggle() {
 
 window.onclick = element => {
 
-    if (element.target != navSideBar && element.target != navSideBarButton && element.target != bar1 && element.target != bar2 && element.target != bar3) {
+    let sideBarAnchors = navSideBar.getElementsByTagName("a")
+
+    function sideBarAnchorValid() {
+
+        let result = false
+
+        for (let i = 0; i < sideBarAnchors.length; i++) {
+
+            if (element.target == sideBarAnchors[i]) {
+
+                result = true
+                break
+            }
+            if (i == sideBarAnchors.length) {
+
+                result = false
+            }
+        }
+
+        return result
+    }
+
+    if (element.target != navSideBar && element.target != navSideBarButton && element.target != bar1 && element.target != bar2 && element.target != bar3 && sideBarAnchorValid() == false) {
 
         navSideBar.classList.remove("navSideBarActive")
 

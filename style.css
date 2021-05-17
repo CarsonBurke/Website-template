@@ -21,13 +21,27 @@ body {
     --quaternaryShade: rgb(51, 52, 71);
 }
 
+body::-webkit-scrollbar {
+    width: 14px;
+    background: #e3e9f0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #36394550;
+    width: 100%;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #36394580;
+}
+
 
 /*NAVBAR*/
 
 .navTopBar {
     position: fixed;
-    width: 90%;
-    padding: 0 5%;
+    width: 95%;
+    padding: 0 2.5%;
     background: var(--primaryShade);
     height: 55px;
     line-height: 55px;
@@ -284,18 +298,12 @@ body {
     padding-right: 5px;
 }
 
-.navTopBar .navDropDownButton {}
+.navTopBar .navDropDownButton {
+    user-select: none;
+}
 
 .navTopBar .navDropDownButton:hover {
     opacity: 1;
-}
-
-.navTopBar .navDropDownButton span {
-    transition: 0.4s;
-}
-
-.navTopBar .navDropDownParent:hover button span {
-    transform: rotate(180deg);
 }
 
 .navTopBar .navDropDownParent {
@@ -348,18 +356,12 @@ body {
     background: var(--secondaryShade);
 }
 
-.navSideBar .navDropDownButton {}
+.navSideBar .navDropDownButton {
+    user-select: none;
+}
 
 .navSideBar .navDropDownButton:hover {
     opacity: 1;
-}
-
-.navSideBar .navDropDownButton span {
-    transition: 0.4s;
-}
-
-.navSideBar .navDropDownParent:hover button span {
-    transform: rotate(180deg);
 }
 
 .navSideBar .navDropDownParent {
@@ -371,12 +373,12 @@ body {
 .navSideBar .navDropDownContentParent {
     opacity: 0;
     pointer-events: none;
-    height: 0;
     overflow: hidden;
     background: transparent;
     transition: all 0.3s;
     position: relative;
-    top: -30px;
+    left: -30px;
+    max-height: 0;
 }
 
 .navSideBar .navDropDownContentChild {
@@ -388,11 +390,12 @@ body {
     background: var(--primaryShade);
 }
 
-.navSideBar .navDropDownParent:hover .navDropDownContentParent {
+.navSideBar .navDropDownParent:focus .navDropDownContentParent {
     opacity: 1;
     pointer-events: all;
-    height: fit-content;
-    top: 0;
+    max-height: 1000px;
+    left: 0;
+    transition-delay: 0.25s;
 }
 
 .navSideBar .navDropDownParent:hover .navDropDownButton {
