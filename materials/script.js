@@ -81,6 +81,9 @@ function slideForward() {
     if (slidesIndex < slides.length - 1) {
 
         slidesIndex++
+    } else {
+
+        slidesIndex = 0
     }
 
     for (let i = 0; i < slides.length; i++) {
@@ -103,6 +106,9 @@ function slideBack() {
     if (slidesIndex > 0) {
 
         slidesIndex--
+    } else {
+
+        slidesIndex = slides.length - 1
     }
 
     for (let i = 0; i < slides.length; i++) {
