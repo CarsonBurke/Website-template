@@ -46,7 +46,6 @@ body::-webkit-scrollbar-thumb:hover {
     position: fixed;
     width: 95%;
     padding: 0 2.5%;
-    background: var(--primaryShade);
     height: 55px;
     line-height: 55px;
     transition: all 0.3s;
@@ -56,10 +55,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navTopBar:hover {
+    background: var(--primaryShade);
     box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
 }
 
 .navTopBarNotTop {
+    background: var(--primaryShade);
     box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
 }
 
@@ -676,6 +677,15 @@ body::-webkit-scrollbar-thumb:hover {
         flex-direction: column;
         padding-top: 50px;
     }
+}
+
+.heroBackgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("images/carsonIcon.png");
+    background-attachment: fixed;
+    color: white;
 }
 
 .heroChild {
