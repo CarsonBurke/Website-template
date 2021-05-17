@@ -715,7 +715,6 @@ body::-webkit-scrollbar-thumb:hover {
 /*HERO*/
 
 .heroParent {
-    min-height: 100vh;
     width: 90%;
     padding: 0 5%;
     display: flex;
@@ -724,13 +723,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media all and (min-width: 800px) {
-    .heroParent {}
+    .heroParent {
+        min-height: 100vh;
+    }
 }
 
 @media all and (max-width: 800px) {
     .heroParent {
         flex-direction: column;
-        padding-top: 50px;
+        padding: 65px 5%;
     }
 }
 
