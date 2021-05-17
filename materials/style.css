@@ -257,7 +257,7 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 999;
     overflow: visible;
     opacity: 0;
-    transition: all 0.2s ease-in-out;
+    transition: opacity 0.2s, left 0.2s;
     display: flex;
     flex-direction: column;
 }
@@ -390,7 +390,7 @@ body::-webkit-scrollbar-thumb:hover {
     background: var(--primaryShade);
 }
 
-.navSideBar .navDropDownParent:focus .navDropDownContentParent {
+.navSideBar .navDropDownParent:focus-within .navDropDownContentParent {
     opacity: 1;
     pointer-events: all;
     max-height: 1000px;
@@ -511,7 +511,7 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 800px) {
     .displayParent {
         flex-direction: column;
     }
@@ -533,9 +533,15 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 800px) {
     .displayChild {
         width: 70%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .displayImage {
+        width: 90%;
     }
 }
 
@@ -550,6 +556,12 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 30px auto;
 }
 
+@media all and (max-width: 500px) {
+    .displayText {
+        width: 90%;
+    }
+}
+
 .displayImage {}
 
 .boxParent {
@@ -562,9 +574,15 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 1050px) {
     .boxParent {
         flex-direction: column;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .boxParent {
+        width: 90%;
     }
 }
 
@@ -577,7 +595,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media all and (max-width: 750px) {
     .boxChild {
-        width: 70%;
+        width: 100%;
         margin: auto;
     }
 }
@@ -599,11 +617,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 .sliderParent {
     width: 60%;
-    padding: 0 80px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media all and (max-width: 800px) {
+    .sliderParent {
+        width: 100%;
+    }
 }
 
 .slideController {
@@ -655,11 +678,24 @@ body::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 80px;
     position: relative;
 }
 
 .slideImage {
-    width: 40%;
+    width: 50%;
+}
+
+@media all and (max-width: 1000px) {
+    .slideImage {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .slideImage {
+        width: 100%;
+    }
 }
 
 .slideHeader {
@@ -685,6 +721,10 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media all and (min-width: 800px) {
+    .heroParent {}
 }
 
 @media all and (max-width: 800px) {
@@ -729,6 +769,12 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 30px auto;
 }
 
+@media all and (max-width: 600px) {
+    .heroText {
+        width: 100%;
+    }
+}
+
 .heroButton {
     padding: 10px 30px;
     font-size: 19px;
@@ -737,6 +783,12 @@ body::-webkit-scrollbar-thumb:hover {
 .heroImage {
     width: 70%;
     box-shadow: none;
+}
+
+@media all and (max-width: 600px) {
+    .heroImage {
+        width: 90%;
+    }
 }
 
 

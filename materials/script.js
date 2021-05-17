@@ -104,6 +104,8 @@ window.onclick = element => {
     }
 }
 
+//IMAGE SLIDER
+
 let sliderParent = document.getElementsByClassName("sliderParent")[0]
 
 let slides = document.getElementsByClassName("slideParent")
