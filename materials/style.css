@@ -496,6 +496,15 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+.displayBackgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/parallaxImage2.jpg");
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 0 1000px;
+    color: white;
+}
+
 .displayChild {
     width: 50%;
     display: flex;
@@ -683,7 +692,8 @@ body::-webkit-scrollbar-thumb:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("images/carsonIcon.png");
+    background-image: url("images/parallaxImage.jpg");
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 0 1000px;
     color: white;
 }
 
