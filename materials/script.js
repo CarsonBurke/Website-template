@@ -67,7 +67,14 @@ function navSideBarToggle() {
 }
 
 window.onclick = element => {
+    clickOutSideBar(element)
+}
 
+window.ontouchend = element => {
+    clickOutSideBar(element)
+}
+
+function clickOutSideBar(element) {
     let sideBarAnchors = navSideBar.getElementsByTagName("a")
 
     function sideBarAnchorValid() {

@@ -89,9 +89,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-right: 25px;
 }
 
-.navSideBarButton:hover {
-    opacity: 0.6;
-}
+.navSideBarButton:hover {}
 
 .bar1,
 .bar2,
