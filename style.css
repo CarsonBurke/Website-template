@@ -494,10 +494,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 .displayParent {
     width: 90%;
-    padding: 0 5%;
+    padding: 40px 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media all and (max-width: 700px) {
+    .displayParent {
+        flex-direction: column;
+    }
 }
 
 .displayChild {
@@ -505,6 +511,12 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media all and (max-width: 700px) {
+    .displayChild {
+        width: 70%;
+    }
 }
 
 .displayHeader {
@@ -551,6 +563,85 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 20px auto;
 }
 
+.sliderParent {
+    width: 60%;
+    padding: 0 80px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slideController {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: auto;
+    background: var(--secondaryShade);
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.09) 0 3px 8px 0;
+    user-select: none;
+}
+
+.slideController:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 5px 18px 0;
+}
+
+.slideController span {
+    font-size: 30px;
+}
+
+.slideControllerLeft {
+    left: 10px;
+}
+
+.slideControllerRight {
+    right: 10px;
+}
+
+.slideParent {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slideActive {
+    display: flex;
+}
+
+.slideTopper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slideImage {
+    width: 30%;
+    margin: auto;
+}
+
+.slideHeader {
+    font-size: 2.2rem;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.slideText {
+    width: 70%;
+    margin: 20px auto;
+    font-size: 15px;
+}
+
 
 /*HERO*/
 
@@ -576,6 +667,12 @@ body::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media all and (max-width: 800px) {
+    .heroChild {
+        width: 70%;
+    }
 }
 
 .heroHeader {

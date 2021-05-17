@@ -67,3 +67,55 @@ window.onclick = element => {
         bar3.classList.remove("barActive3")
     }
 }
+
+let sliderParent = document.getElementsByClassName("sliderParent")[0]
+
+let slides = document.getElementsByClassName("slideParent")
+
+let slidesIndex = -1
+
+window.addEventListener("load", slideForward)
+
+function slideForward() {
+
+    if (slidesIndex < slides.length - 1) {
+
+        slidesIndex++
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+
+        let slide = slides[i]
+
+        if (i == slidesIndex) {
+
+            slide.classList.add("slideActive")
+        } else {
+
+            slide.classList.remove("slideActive")
+        }
+    }
+    console.log(slidesIndex)
+}
+
+function slideBack() {
+
+    if (slidesIndex > 0) {
+
+        slidesIndex--
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+
+        let slide = slides[i]
+
+        if (i == slidesIndex) {
+
+            slide.classList.add("slideActive")
+        } else {
+
+            slide.classList.remove("slideActive")
+        }
+    }
+    console.log(slidesIndex)
+}
