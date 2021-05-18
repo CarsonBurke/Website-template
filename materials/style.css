@@ -318,7 +318,7 @@ body::-webkit-scrollbar-thumb:hover {
     position: absolute;
     z-index: 1;
     right: -13px;
-    top: 20px;
+    top: 0;
     background: transparent;
     padding: 12px;
     transition: all 0.3s;
