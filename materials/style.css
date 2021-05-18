@@ -59,12 +59,12 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
 }
 
-.navTopBar:hover {
+.navParent:hover .navTopBar {
     background: var(--primaryShade);
     box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
 }
 
-.navTopBar:focus-within {
+.navParent:focus-within .navTopBar {
     background: var(--primaryShade);
     box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
 }
@@ -271,6 +271,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-left: 15px;
     font-size: 22px;
     margin: 10px 0;
+    pointer-events: none;
 }
 
 .navSideBar a {
