@@ -431,6 +431,12 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
 }
 
+.containerQuaternary {
+    background: var(--quaternaryShade);
+    padding: 40px 5%;
+    color: white;
+}
+
 .image {
     width: 60%;
     aspect-ratio: 1 / 1;
@@ -715,6 +721,67 @@ body::-webkit-scrollbar-thumb:hover {
     width: 70%;
     margin: 20px auto;
     font-size: 15px;
+}
+
+
+/*MENU*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.menuButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menuButton {
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 8px 20px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 12px 36px 0;
+    transition: all 0.15s;
+}
+
+.menuButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 12px 36px 0, inset rgba(0, 0, 0, 0.3) 0 0 0 10000px;
+}
+
+.menuButtonActive {
+    box-shadow: rgba(0, 0, 0, 0) 0 12px 36px 0, inset rgba(0, 0, 0, 0.3) 0 0 0 10000px;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.menuItem {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    background: var(--quaternaryShade);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 12px 40px 0;
+}
+
+.menuItemHide {
+    display: none;
 }
 
 
