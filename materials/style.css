@@ -1,7 +1,7 @@
 /*IMPORTANT*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -14,7 +14,7 @@ body {
     margin: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-family: "open sans";
+    font-family: "Poppins";
     --primary: hsl(0, 88%, 44%);
     --primaryShade: hsl(0, 0%, 100%);
     --secondaryShade: hsl(200, 20%, 97%);
@@ -57,17 +57,17 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navTopBarNotTop {
     background: var(--primaryShade);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
+    box-shadow: rgba(0, 0, 0, 0.04) 0 18px 18px 0;
 }
 
 .navParent:hover .navTopBar {
     background: var(--primaryShade);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
+    box-shadow: rgba(0, 0, 0, 0.04) 0 18px 18px 0;
 }
 
 .navParent:focus-within .navTopBar {
     background: var(--primaryShade);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 12px 12px 0;
+    box-shadow: rgba(0, 0, 0, 0.04) 0 18px 18px 0;
 }
 
 .navChild {
@@ -102,7 +102,7 @@ body::-webkit-scrollbar-thumb:hover {
     transition: all 0.2s;
     position: relative;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 3px 6px 1px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 4px 0;
 }
 
 .barActive1 {
@@ -148,6 +148,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-left: 10px;
     color: rgb(0, 0, 0);
     font-size: 30px;
+    font-weight: 500;
 }
 
 .navRight {}
@@ -166,8 +167,9 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     align-items: center;
     font-size: 18px;
-    opacity: 0.7;
+    opacity: 0.9;
     font-weight: bold;
+    font-weight: 350;
 }
 
 .navRightLeft a:hover {
@@ -199,6 +201,7 @@ body::-webkit-scrollbar-thumb:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0 2px 8px 0;
     transition: all 0.3s;
     display: flex;
+    font-weight: 400;
 }
 
 .navRightButton:hover {
@@ -216,6 +219,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 0;
     height: 55px;
     line-height: 55px;
+    transition: height 0s line-height 0s border-radius 0s;
 }
 
 .navRightButtonAlt:hover {
@@ -223,7 +227,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .navRightButtonAlt:focus {
-    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 0 1000px, inset var(--primary) 0 -55px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 6px 8px 0, inset rgba(0, 0, 0, 0.2) 0 0 0 1000px, inset var(--primary) 0 -55px 0 0;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
     color: white;
 }
 
@@ -270,9 +277,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .navSideBar h3 {
     padding-left: 15px;
-    font-size: 22px;
+    font-size: 24px;
     margin: 10px 0;
     pointer-events: none;
+    font-weight: 400;
 }
 
 .navSideBar a {
@@ -285,8 +293,8 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 18px;
     display: flex;
     align-items: center;
-    opacity: 0.7;
-    font-weight: bold;
+    opacity: 0.9;
+    font-weight: 350;
 }
 
 .navSideBar a:hover {
@@ -456,7 +464,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: fit-content;
     background: var(--primary);
     padding: 8px 30px;
-    font-weight: 300;
+    font-weight: 350;
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 4px 10px 0;
     transition: all 0.3s;
@@ -478,6 +486,100 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 25px;
     padding-right: 8px;
 }
+
+
+/*HERO*/
+
+.heroParent {
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (min-width: 800px) {
+    .heroParent {
+        min-height: 100vh;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .heroParent {
+        flex-direction: column;
+        padding: 65px 5%;
+    }
+}
+
+.heroBackgroundImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("images/image1.jpg");
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 0 1000px;
+    color: white;
+}
+
+.heroChild {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 800px) {
+    .heroChild {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .heroChild {
+        width: 90%;
+    }
+}
+
+.heroHeader {
+    font-size: 2.75rem;
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.heroText {
+    font-size: 18px;
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+@media all and (max-width: 600px) {
+    .heroText {
+        width: 100%;
+    }
+}
+
+.heroButton {
+    padding: 10px 40px;
+    font-size: 19px;
+    margin: 30px auto;
+}
+
+.heroImage {
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 60px 130px 0;
+}
+
+@media all and (max-width: 600px) {
+    .heroImage {
+        width: 100%;
+    }
+}
+
+
+/*CARDS*/
 
 .cardContainer {
     display: flex;
@@ -521,6 +623,7 @@ body::-webkit-scrollbar-thumb:hover {
 .cardHeader {
     padding: 0 1rem;
     font-size: 28px;
+    font-weight: 450;
 }
 
 .cardText {
@@ -528,6 +631,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 16px;
     line-height: 26px;
     opacity: 0.9;
+    font-weight: 300;
 }
 
 .cardImage {
@@ -536,6 +640,9 @@ body::-webkit-scrollbar-thumb:hover {
     object-fit: cover;
     box-shadow: none;
 }
+
+
+/*DISPLAY*/
 
 .displayParent {
     width: 90%;
@@ -582,12 +689,14 @@ body::-webkit-scrollbar-thumb:hover {
 .displayHeader {
     font-size: 2.2rem;
     margin: 0;
+    font-weight: 450;
 }
 
 .displayText {
     font-size: 16px;
     width: 70%;
     margin: 30px auto;
+    font-weight: 300;
 }
 
 @media all and (max-width: 500px) {
@@ -597,6 +706,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .displayImage {}
+
+
+/*BOX*/
 
 .secondaryBoxParent {
     background: var(--primaryShade);
@@ -643,17 +755,22 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0;
     margin-top: 20px;
     text-align: center;
+    font-weight: 450;
 }
 
 .boxText {
     font-size: 15px;
     width: 70%;
     margin: 20px auto;
+    font-weight: 300;
 }
 
 .boxImage {
     box-shadow: rgba(0, 0, 0, 0.22) 0 20px 30px 0;
 }
+
+
+/*SLIDER*/
 
 .sliderParent {
     width: 60%;
@@ -762,12 +879,14 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0;
     margin-top: 20px;
     text-align: center;
+    font-weight: 450;
 }
 
 .slideText {
     width: 70%;
     margin: 20px auto;
     font-size: 15px;
+    font-weight: 300;
 }
 
 
@@ -833,98 +952,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-/*HERO*/
-
-.heroParent {
-    width: 90%;
-    padding: 0 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media all and (min-width: 800px) {
-    .heroParent {
-        min-height: 100vh;
-    }
-}
-
-@media all and (max-width: 800px) {
-    .heroParent {
-        flex-direction: column;
-        padding: 65px 5%;
-    }
-}
-
-.heroBackgroundImage {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("images/image1.jpg");
-    box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 0 1000px;
-    color: white;
-}
-
-.heroChild {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media all and (max-width: 800px) {
-    .heroChild {
-        width: 70%;
-    }
-}
-
-@media all and (max-width: 600px) {
-    .heroChild {
-        width: 90%;
-    }
-}
-
-.heroHeader {
-    font-size: 2.75rem;
-    margin: 0;
-    text-align: center;
-}
-
-.heroText {
-    font-size: 17px;
-    width: 80%;
-    margin: 30px auto;
-    margin-bottom: 0;
-}
-
-@media all and (max-width: 600px) {
-    .heroText {
-        width: 100%;
-    }
-}
-
-.heroButton {
-    padding: 10px 40px;
-    font-size: 19px;
-    margin: 30px auto;
-}
-
-.heroImage {
-    width: 70%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0 60px 130px 0;
-}
-
-@media all and (max-width: 600px) {
-    .heroImage {
-        width: 100%;
-    }
-}
-
-
-/**/
-
-
 /*FOOTER*/
 
 .footer {
@@ -934,7 +961,6 @@ body::-webkit-scrollbar-thumb:hover {
     flex-wrap: wrap;
     color: white;
     padding: 20px 5%;
-    font-family: "Poppins", sans-serif;
     background: var(--footerTertiary);
     justify-content: space-between;
     overflow: hidden;
@@ -944,6 +970,7 @@ body::-webkit-scrollbar-thumb:hover {
     .footer {
         flex-direction: column;
         justify-content: center;
+        padding: 40px 5%;
     }
 }
 
@@ -958,6 +985,7 @@ body::-webkit-scrollbar-thumb:hover {
     .footerLeft {
         width: 100%;
         justify-content: center;
+        padding-bottom: 20px;
     }
 }
 
@@ -985,11 +1013,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 .footerHeader {
     margin: 0;
-    font-size: 27px;
+    font-size: 25px;
+    font-weight: 450;
 }
 
 .footerCopyright {
     text-align: center;
+    font-weight: 350;
 }
 
 .footerContentContainer {
@@ -1008,7 +1038,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .footerContentChild {
-    padding: 0 20px;
+    padding: 0 18px;
     display: flex;
     flex-direction: column;
 }
@@ -1017,6 +1047,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 21px;
     margin: 0;
     padding-bottom: 10px;
+    font-weight: 400;
 }
 
 @media all and (max-width: 850px) {
@@ -1028,11 +1059,14 @@ body::-webkit-scrollbar-thumb:hover {
 .footerLink {
     font-size: 16px;
     text-decoration: none;
-    color: var(--footerPrimary);
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s;
     padding: 4px 0;
     width: fit-content;
+    background-size: 210%;
+    background-image: linear-gradient(90deg, var(--footerPrimary) 50%, transparent 50%);
+    background-position-x: 100%;
+    color: var(--footerPrimary);
 }
 
 @media all and (max-width: 850px) {
@@ -1042,7 +1076,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .footerLink:hover {
-    box-shadow: var(--footerPrimary) 0 2px 0 0;
+    background-position-x: 0;
+    /* box-shadow: var(--footerPrimary) 0 2px 0 0; */
 }
 
 .footerLink:focus {
