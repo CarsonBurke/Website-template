@@ -1,12 +1,16 @@
+// Default variables
+
 let defaultStrength = 0.4
 let defaultFadeAmount = 250
+let defaultWaveSpeed = 1
 
 let themes = {
     light: "rgb(255, 255, 255, ",
     dark: "rgb(0, 0, 0, "
 }
 
-//ADD STYLES
+// Add styles
+
 addStyles()
 
 function addStyles() {
@@ -36,6 +40,8 @@ function addStyles() {
 let waveButtons = document.getElementsByClassName("waveButton")
 
 window.onload = function() {
+
+    // Apply required changes to button
 
     for (let button of waveButtons) {
 
@@ -72,10 +78,6 @@ async function addWave(e) {
 
     wave.style.top = y - button.getBoundingClientRect().top + "px"
 
-    /* wave.style.left = button.getBoundingClientRect().left + "px"
-
-    wave.style.top = button.getBoundingClientRect().top + "px" */
-
     if (!button.dataset.waveFadeAmount) {
 
         button.dataset.waveFadeAmount = defaultFadeAmount
@@ -88,7 +90,7 @@ async function addWave(e) {
 
     if (!button.dataset.waveTime) {
 
-        button.dataset.waveTime = 2
+        button.dataset.waveTime = defaultWaveSpeed
     }
 
     let theme
@@ -122,14 +124,7 @@ async function addWave(e) {
 
         size += button.offsetWidth / 100
 
-        /* wave.style.width = size + "px"
-        wave.style.height = size + "px" */
-
-        /* wave.style.background = theme + button.dataset.waveStrength + ")" */
-
         wave.style.boxShadow = theme + button.dataset.waveStrength + ") 0 0 0 " + size + "px"
-
-        /* wave.style.transform = "translate3d(" + size * -0.5 + "px, " + size * -0.5 + "px, 0)" */
 
         wave.style.opacity = 1 - i / button.dataset.waveFadeAmount
 
