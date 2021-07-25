@@ -10,12 +10,12 @@
 
 * {
     font-family: "Poppins";
+    scroll-behavior: smooth;
 }
 
 body {
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
     overflow-x: hidden;
     --primary: hsl(0, 88%, 44%);
     --primaryShade: hsl(0, 0%, 100%);
