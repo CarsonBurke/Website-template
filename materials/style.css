@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb:hover {
 .bar3 {
     width: 30px;
     height: 4px;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--navColor);
     margin: 8.5px 7.5px;
     transition: all 0.2s;
     position: relative;
@@ -669,7 +669,6 @@ body::-webkit-scrollbar-thumb:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("images/image2.jpg");
     box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 0 1000px;
     color: white;
 }
@@ -963,12 +962,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 .footer {
     --footerPrimary: #2B92F1;
-    --footerTertiary: rgb(40, 40, 53);
+    --footerPrimaryShade: rgb(40, 40, 53);
     display: flex;
     flex-wrap: wrap;
     color: white;
     padding: 20px 5%;
-    background: var(--footerTertiary);
+    background: var(--footerPrimaryShade);
     justify-content: space-between;
     overflow: hidden;
 }
@@ -1095,8 +1094,4 @@ body::-webkit-scrollbar-thumb:hover {
 .footerLink:visited {
     box-shadow: var(--footerPrimary) 0 0 0 0;
     opacity: 0.7;
-}
-
-opacity: 0.7;
-
 }
