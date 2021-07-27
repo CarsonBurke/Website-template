@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: "Poppins";
+    font-family: "Poppins", 'sans-serif';
     scroll-behavior: smooth;
 }
 
@@ -524,7 +524,6 @@ body::-webkit-scrollbar-thumb:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("images/image1.jpg");
     box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 0 1000px;
     color: white;
 }

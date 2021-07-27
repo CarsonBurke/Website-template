@@ -4,14 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="materials/images/carsonIcon.png" type="image/png">
+    <meta name="keywords" content="SEO keywords">
+    <meta name="description" content="SEO description">
+    <meta name="theme-color" content="hsl(0, 88%, 44%)">
+    <meta property="og:image" content="../materials/images/carsonIcon.png" />
+
+    <link rel="apple-touch-icon" href="../materials/images/carsonIcon.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" href="../materials/images/carsonIcon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-    <link href="materials/style.css" rel="stylesheet" type="text/css" />
+    <link href="../materials/style.css" rel="stylesheet" type="text/css" />
+
     <title>Title</title>
 </head>
 
 <body>
-    <script src="materials/scroller.js"></script>
+    <script src="../materials/scroller.js"></script>
 
     <nav class="navParent" data-too-big="1065">
         <div class="navTopBar">
@@ -27,7 +35,7 @@
 
                 <a href="#" class="navTopper animate">
 
-                    <img src="materials/images/carsonIcon.png" alt="navIcon" class="navIcon">
+                    <img src="../materials/images/carsonIcon.png" alt="navIcon" class="navIcon">
                     <h1 class="navHeader">Header</h1>
 
                 </a>
@@ -133,11 +141,11 @@
             </div>
             <div class="heroChild">
 
-                <img src="materials/images/image1.jpg" alt="" class="heroImage image animate floatRight" data-time="1.9">
+                <img src="../materials/images/image1.jpg" alt="" class="heroImage image animate floatRight" data-time="1.9">
 
             </div>
         </section>
-        <section class="heroParent heroBackgroundImage containerPrimary parallaxifyBg">
+        <section class="heroParent heroBackgroundImage containerPrimary parallaxifyBg" style="background-image: url('../materials/images/image1.jpg');">
             <div class="heroChild">
 
                 <header class="heroTopper">
@@ -165,7 +173,7 @@
             </div>
             <div class="displayChild animate floatUp">
 
-                <img src="materials/images/image2.jpg" alt="" class="displayImage image">
+                <img src="../materials/images/image2.jpg" alt="" class="displayImage image">
 
             </div>
 
@@ -180,7 +188,7 @@
             </div>
 
         </section>
-        <section class="displayParent displayBackgroundImage containerPrimary parallaxifyBg" style="background-image: url('materials/images//image2.jpg');">
+        <section class="displayParent displayBackgroundImage containerPrimary parallaxifyBg" style="background-image: url('../materials/images//image2.jpg');">
 
             <div class="displayChild">
 
@@ -201,13 +209,13 @@
                 </div>
                 <div class="transparentCardParent cardParent animate floatUp" data-time="0.6" data-show-value="300">
 
-                    <img src="materials/images/image2.jpg" alt="" class="cardImage image">
+                    <img src="../materials/images/image2.jpg" alt="" class="cardImage image">
                     <p class="cardText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quaerat, quae, minus sint similique aliquam officia laudantium veritatis ad sunt vitae praesentium quia placeat amet quod corrupti. Minima, ratione asperiores!</p>
 
                 </div>
                 <div class="transparentCardParent cardParent animate floatUp" data-time="0.8" data-show-value="300">
 
-                    <img src="materials/images/image1.jpg" alt="" class="cardImage image">
+                    <img src="../materials/images/image1.jpg" alt="" class="cardImage image">
                     <h3 class="cardHeader">Header</h3>
 
                 </div>
@@ -225,7 +233,7 @@
                 </div>
                 <div class="boxChild">
 
-                    <img src="materials/images/image1.jpg" alt="" class="boxImage image">
+                    <img src="../materials/images/image1.jpg" alt="" class="boxImage image">
 
                 </div>
             </div>
@@ -256,7 +264,7 @@
                             arrow_forward_ios
                             </span></div>
 
-                        <img src="materials/images/image1.jpg" alt="" class="slideImage image animate floatUp" data-show-value="-200">
+                        <img src="../materials/images/image1.jpg" alt="" class="slideImage image animate floatUp" data-show-value="-200">
 
                     </div>
                     <div class="slideContent">
@@ -276,7 +284,7 @@
                             arrow_forward_ios
                             </span></div>
 
-                        <img src="materials/images/image2.jpg" alt="" class="slideImage image animate floatUp" data-show-value="-200">
+                        <img src="../materials/images/image2.jpg" alt="" class="slideImage image animate floatUp" data-show-value="-200">
 
                     </div>
                     <div class="slideContent">
@@ -355,8 +363,8 @@
         <div class="footerLeft animate floatDown" data-time="0.5" data-show-value="0">
             <div class="footerTopper">
 
-                <img src="materials/images/carsonIcon.png" alt="" class="footerIcon">
-                <h1 class="footerHeader">Carson Burke</h1>
+                <img src="../materials/images/carsonIcon.png" alt="" class="footerIcon">
+                <h2 class="footerHeader">Carson Burke</h2>
 
             </div>
             <div class="footerCopyright">© 2021</div>
@@ -366,34 +374,34 @@
 
                 <h3 class="footerContentHeader">Portfolio</h3>
 
-                <a href="https://carsonburke.github.io/My-Portfolio/" target="_blank" class="footerLink">Home</a>
-                <a href="https://carsonburke.github.io/My-Portfolio/#myWork" target="_blank" class="footerLink">My Projects</a>
-                <a href="https://carsonburke.github.io/My-Portfolio/#contact" target="_blank" class="footerLink">Contact</a>
+                <a href="https://carsonburke.github.io/My-Portfolio/" target="_blank" class="footerLink" rel="noreferrer">Home</a>
+                <a href="https://carsonburke.github.io/My-Portfolio/#myWork" target="_blank" class="footerLink" rel="noreferrer">My Projects</a>
+                <a href="https://carsonburke.github.io/My-Portfolio/#contact" target="_blank" class="footerLink" rel="noreferrer">Contact</a>
 
             </div>
             <div class="footerContentChild">
 
                 <h3 class="footerContentHeader">Web dev tools</h3>
 
-                <a href="https://carsonburke.github.io/Scroller-JS-scroll-animation-framework/" target="_blank" class="footerLink">Scroller</a>
-                <a href="https://carsonburke.github.io/Parallaxify-JS-parallax-framework/" target="_blank" class="footerLink">Parallax</a>
-                <a href="https://carsonburke.github.io/Wave-button/" target="_blank" class="footerLink">Wave</a>
+                <a href="https://carsonburke.github.io/Scroller-JS-scroll-animation-framework/" target="_blank" class="footerLink" rel="noreferrer">Scroller</a>
+                <a href="https://carsonburke.github.io/Parallaxify-JS-parallax-framework/" target="_blank" class="footerLink" rel="noreferrer">Parallaxify</a>
+                <a href="https://carsonburke.github.io/Wave-button/" target="_blank" class="footerLink" rel="noreferrer">Wave</a>
 
             </div>
             <div class="footerContentChild">
 
                 <h3 class="footerContentHeader">Other</h3>
 
-                <a href="https://www.affairsandorder.com/" target="_blank" class="footerLink">Support My Work</a>
+                <a href="https://www.affairsandorder.com/" target="_blank" class="footerLink" rel="noreferrer">Support My Work</a>
 
             </div>
         </div>
     </footer>
 
-    <script src="materials/wave.js"></script>
-    <script src="materials/dynamicMenu.js"></script>
-    <script src="materials/parallaxify.js"></script>
-    <script src="materials/script.js"></script>
+    <script src="../materials/wave.js"></script>
+    <script src="../materials/dynamicMenu.js"></script>
+    <script src="../materials/parallaxify.js"></script>
+    <script src="../materials/script.js"></script>
 </body>
 
 </html>
