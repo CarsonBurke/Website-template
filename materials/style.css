@@ -539,11 +539,14 @@ body::-webkit-scrollbar-thumb:hover {
 .heroPopout {
     padding: 0;
     margin: 20px 5%;
-    margin-top: 75px;
-    min-height: calc(100vh - 40px - 55px);
+    margin-top: 0;
     width: calc(90%);
     box-shadow: rgba(0, 0, 0, 0.4) 0 3px 12px 0;
     color: white;
+}
+
+.heroPopoutOnScroll {
+    transition: margin 0.3s, height 0.3s, width 0.3s, padding 0.3s, box-shadow 0.3s;
 }
 
 .heroChild {

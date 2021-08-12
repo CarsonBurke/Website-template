@@ -1,3 +1,5 @@
+// Navbar
+
 let navParent = document.getElementsByClassName("navParent")[0]
 
 let navTopBar = document.getElementsByClassName("navTopBar")[0]
@@ -38,7 +40,9 @@ function tooBig() {
     }
 }
 
-window.onscroll = function navParentTop() {
+document.addEventListener("scroll", navParentTop)
+
+function navParentTop() {
 
     let itemPosTop = document.documentElement.scrollTop
 
@@ -111,7 +115,29 @@ function clickOutSideBar(element) {
     }
 }
 
-//IMAGE SLIDER
+// Hero popout on scroll
+
+let popoutElements = document.getElementsByClassName("heroPopoutOnScroll")
+
+document.addEventListener("scroll", popout)
+
+function popout() {
+
+    let itemPosTop = document.documentElement.scrollTop
+
+    for (let element of popoutElements) {
+
+        if (itemPosTop == 0) {
+
+            element.classList.remove("heroPopout")
+        } else {
+
+            element.classList.add("heroPopout")
+        }
+    }
+}
+
+// Image slider
 
 let sliderParent = document.getElementsByClassName("sliderParent")[0]
 
@@ -168,3 +194,5 @@ function slideBack() {
         }
     }
 }
+
+//
