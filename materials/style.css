@@ -537,7 +537,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .heroPopout {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     margin: 20px 5%;
     margin-top: 0;
     width: calc(90%);
