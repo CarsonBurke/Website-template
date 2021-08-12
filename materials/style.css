@@ -533,7 +533,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .heroGradient {
-    background: linear-gradient(135deg, rgb(35, 112, 255) 10%, rgb(255, 55, 55) 90%);
+    background: linear-gradient(135deg, rgb(138, 35, 255) 10%, rgb(255, 55, 55) 90%);
 }
 
 .heroPopout {
