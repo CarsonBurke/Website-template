@@ -55,20 +55,23 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
-    --navColor: black;
+    --navColor: rgb(255, 255, 255);
 }
 
 .navTopBarNotTop {
+    --navColor: rgb(0, 0, 0);
     background: var(--primaryShade);
     box-shadow: rgba(0, 0, 0, 0.04) 0 18px 18px 0;
 }
 
 .navParent:hover .navTopBar {
+    --navColor: rgb(0, 0, 0);
     background: var(--primaryShade);
     box-shadow: rgba(0, 0, 0, 0.04) 0 18px 18px 0;
 }
 
 .navParent:focus-within .navTopBar {
+    --navColor: rgb(0, 0, 0);
     background: var(--primaryShade);
     box-shadow: rgba(0, 0, 0, 0.04) 0 18px 18px 0;
 }
@@ -134,15 +137,16 @@ body::-webkit-scrollbar-thumb:hover {
     text-decoration: none;
     width: fit-content;
     gap: 5px;
+    padding: 0 5px;
     height: 55px;
 }
 
 .navTopper:hover {
-    box-shadow: inset var(--primary) 0 -3px 0 0;
+    background: var(--secondaryShade);
 }
 
 .navTopper:focus {
-    box-shadow: inset var(--primary) 0 -3px 0 0;
+    background: var(--secondaryShade);
 }
 
 .navIcon {
@@ -521,10 +525,24 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .heroBackgroundImage {
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url("images/image1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: inset rgba(0, 0, 0, 0.5) 0 0 0 1000px;
+    color: white;
+}
+
+.heroGradient {
+    background: linear-gradient(135deg, rgb(35, 112, 255) 10%, rgb(255, 55, 55) 90%);
+}
+
+.heroPopout {
+    padding: 0;
+    margin: 20px 5%;
+    margin-top: 75px;
+    min-height: calc(100vh - 40px - 55px);
+    width: calc(90%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 3px 12px 0;
     color: white;
 }
 
